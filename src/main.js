@@ -15,14 +15,6 @@ form.addEventListener('submit', async e => {
   e.preventDefault();
   const query = input.value.trim();
 
-  if (!query) {
-    iziToast.warning({
-      title: 'Oops',
-      message: 'Please enter a search term!',
-    });
-    return;
-  }
-
   clearGallery();
   showLoader();
 
