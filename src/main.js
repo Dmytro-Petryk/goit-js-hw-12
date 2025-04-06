@@ -24,11 +24,11 @@ form.addEventListener('submit', async e => {
   }
 
   clearGallery();
-  showLoader(); // <--- тут з'являється лоадер і текст
+  showLoader();
 
   try {
     const data = await getImagesByQuery(query);
-    hideLoader(); // <--- після відповіді бекенду ховаємо
+    hideLoader();
 
     if (data.hits.length === 0) {
       iziToast.error({
