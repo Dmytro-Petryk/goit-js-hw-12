@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async event => {
     event.preventDefault();
-    query = event.target.elements.searchQuery.value.trim();
+    query = event.target.elements.SearchText.value.trim();
 
     if (!query) {
       iziToast.warning({ message: 'Please enter a search term' });
