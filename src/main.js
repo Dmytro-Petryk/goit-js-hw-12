@@ -12,7 +12,6 @@ import 'izitoast/dist/css/iziToast.min.css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.form');
-  const loadMoreBtn = document.querySelector('.load-more');
 
   let query = '';
   let page = 1;
@@ -28,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     clearGallery();
-    page = 1;
+
     hideLoadMoreButton();
     showLoader();
 
