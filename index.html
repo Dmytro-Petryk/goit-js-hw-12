@@ -3,32 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>hw-js-11</title>
+    <title>hw-js-12</title>
     <span class="loader"></span>
-    <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-Db2TdIkw.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-D7dDGQOt.css">
+    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-Db2TdIkw.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-Bu3fBQi9.css">
   </head>
   <body>
     <form class="form">
       <label>
         <input
           type="text"
-          name="search-text"
+          name="searchQuery"
           placeholder="Search images..."
           required
         />
       </label>
       <button type="submit">Search</button>
     </form>
-
     <div class="loader-container">
       <span class="loader"></span>
       <p class="loader-text">Loading images, please wait...</p>
     </div>
 
     <ul class="gallery"></ul>
-
+    <div class="load-div">
+      <button class="load-more hidden">Load more</button>
+    </div>
   </body>
 </html>
