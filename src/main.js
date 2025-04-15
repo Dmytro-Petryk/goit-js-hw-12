@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
           title: 'No results',
           message: 'Sorry, there are no images matching your search query.',
         });
-        return;
       }
 
       createGallery(data.hits);
@@ -56,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     } finally {
       hideLoader();
+      return 0;
     }
   });
   document.querySelector('.load-more').addEventListener('click', async () => {
