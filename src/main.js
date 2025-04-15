@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', async event => {
     event.preventDefault();
+    page = 1;
     query = event.target.elements.SearchText.value.trim();
 
     if (!query) {
